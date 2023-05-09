@@ -1,5 +1,4 @@
 .calendar-container {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
   display: flex;
@@ -7,7 +6,6 @@
 }
 
 .calendar-week {
-  border: 1px solid green;
   width: 100%;
   min-height: 10em;
   display: flex;
@@ -19,7 +17,7 @@
 .calendar-day {
   display: flex;
   flex-flow: column wrap;
-  border: 1px solid blue;
+  border: 1px solid grey;
   margin: 2px;
   align-items: center;
   flex-grow: 1;
@@ -31,6 +29,13 @@
 .calendar-day-course {
   background-color: rgb(220, 198, 7);
   color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.calendar-day-course a {
+  font-size: 14px;
 }
 
 .calendar-day-number {
@@ -42,4 +47,8 @@
   background-color: blue;
   color: white;
   border-radius: 50%;
+}
+
+.day-weekend {
+  background-color: gainsboro;
 }
