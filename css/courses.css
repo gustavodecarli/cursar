@@ -72,3 +72,8 @@
   border-radius: 5px;
   border-style: none;
 }
+
+.course-comprar:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}

@@ -9,32 +9,26 @@
 
 .detail-image-container {
   display: flex;
-  border: 1px solid red;
   min-width: 200px;
   padding: 30px;
 }
 
 .detail-image {
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
+  height: 400px;
 }
 
 .detail-text-container {
   display: flex;
   flex-direction: column;
   align-items: start;
-  border: 1px solid red;
-
   min-width: 200px;
 }
 
-.detail-text {
-  border: 1px solid red;
+.detail-text h3 {
+  text-align: left;
 }
 
 .detail-footer-container {
-  border: 1px solid red;
 }
 
 .detail-footer-text {
