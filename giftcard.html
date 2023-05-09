@@ -15,23 +15,22 @@
     />
     <link rel="stylesheet" href="./css/giftcard.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-
   </head>
 
   <body>
     <header class="header">
       <div><img src="./img/logo.png" /></div>
       <div>
-        <input class="search" placeholder="Search" ></input>
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input class="search" placeholder="Search" />
       </div>
       <div>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
         <span class="shopping-count warning">1</span>
       </div>
     </header>
+
     <nav>
-      <ul>
+      <ul class="topnav">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="calendar.html">Calendario de cursos</a></li>
         <li><a href="giftcard.html">Gift Card</a></li>
@@ -39,28 +38,31 @@
         <li><a href="contact.html">Contactenos</a></li>
       </ul>
     </nav>
-    <main>
 
-        <section>
-          <article>
-            <div class="giftcard-container">
+    <main>
+      <section>
+        <article>
+          <div class="giftcard-container">
             <div class="giftcard-preview">
-                
-                <div class="giftcard-image">
-                  <div class="giftcard-cost">$ 0.00</div>
-                  <h4>GIFT CARD para</h4>
-                  <h2>Destinatario</h2>
-                  
-                </div>
-    
-                <p>VISTA PREVIA DE RESULTADO DE PERSONALIZACION</p>
+              <div class="giftcard-image">
+                <div class="giftcard-cost">$ 0.00</div>
+                <h4>GIFT CARD para</h4>
+                <h2>Destinatario</h2>
+              </div>
+
+              <p>VISTA PREVIA DE RESULTADO DE PERSONALIZACION</p>
             </div>
-            
+
             <div class="giftcard-controls">
               <h4>Personalización de Giftcard</h4>
               <form>
                 <div class="giftcard-controls-row">
-                  <input type="text" id="nombre" name="nombre" placeholder="Nombre Destinatario"/>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Nombre Destinatario"
+                  />
                 </div>
                 <div class="giftcard-controls-row">
                   <h5>Color</h5>
@@ -83,7 +85,6 @@
                 <div class="giftcard-controls-row">
                   <h5>Tamaño de fuente</h5>
                   <div class="giftcard-radio-container">
-                    
                     <div class="giftcard-radio">
                       <div class="giftcard-radio-fontsize size20">20px</div>
                       <input type="radio" id="fontsize20" name="fontsize" />
@@ -110,10 +111,10 @@
                 <div class="giftcard-controls-row">
                   <div>
                     <label for="monto">Monto $</label>
-                    <input type="text" id="monto" name="monto"/>
+                    <input type="text" id="monto" name="monto" />
                   </div>
                 </div>
-                
+
                 <div class="giftcard-controls-row">
                   <h5>Ubicación</h5>
                   <div class="giftcard-radio-container">
@@ -130,14 +131,14 @@
                       <input type="radio" id="layout" name="layout" />
                     </div>
                     <div class="giftcard-radio">
-                      <div class="giftcard-radio-layout bottom-rigth">  
-                        <div class="giftcard-radio-layout-mark "></div>
+                      <div class="giftcard-radio-layout bottom-rigth">
+                        <div class="giftcard-radio-layout-mark"></div>
                       </div>
                       <input type="radio" id="layout" name="layout" />
                     </div>
                     <div class="giftcard-radio">
                       <div class="giftcard-radio-layout bottom-left">
-                        <div class="giftcard-radio-layout-mark "></div>
+                        <div class="giftcard-radio-layout-mark"></div>
                       </div>
                       <input type="radio" id="layout" name="layout" />
                     </div>
@@ -161,23 +162,34 @@
                     </div>
                   </div>
                 </div>
-        
+
                 <div>
                   <button class="form-button-confirm left">CONFIRMAR</button>
                 </div>
               </form>
             </div>
           </div>
-          </article>
-        </section>
+        </article>
+      </section>
     </main>
-    <footer class="footer">      
-        <p>Coscarelli Silvana Agustina</p>
-        <p>Correo electrónico: <a href="mailto:silvanaagustinacoscarelli@gmail.com">silvanaagustinacoscarelli@gmail.com</a></p>
-        <p><a href="https://www.unlam.edu.ar" target="_blank" rel="noopener noreferrer">Visitar UNLaM</a></p>
-        <p><a href="#top">Arriba</a></p>
+    <footer class="footer">
+      <p>Coscarelli Silvana Agustina</p>
+      <p>
+        Correo electrónico:
+        <a href="mailto:silvanaagustinacoscarelli@gmail.com"
+          >silvanaagustinacoscarelli@gmail.com</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.unlam.edu.ar"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Visitar UNLaM</a
+        >
+      </p>
+      <p><a href="#top">Arriba</a></p>
     </footer>
     <script type="text/javascript" async="" src="./js/carusel.js"></script>
   </body>
- 
 </html>
