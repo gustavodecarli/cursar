@@ -1,0 +1,21 @@
+.steps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.step {
+  background: #454647;
+  border: 0;
+  border-radius: 4.5px;
+  color: #f7fafc;
+  font-size: 45px;
+  text-align: center;
+  min-height: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  width: 33%;
+}

@@ -1,0 +1,138 @@
+.giftcard-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.giftcard-preview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+}
+
+.giftcard-image {
+  display: flex;
+  flex-direction: column;
+  background-color: #3d5b81;
+  color: #ebebeb;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.giftcard-cost {
+  background-color: #293241;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  font-size: 30px;
+  top: 30px;
+  right: 30px;
+}
+
+.giftcard-controls {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 30px;
+}
+
+.giftcard-controls-row {
+  margin: 10px;
+}
+
+.giftcard-controls-row input {
+  width: 70%;
+}
+
+.giftcard-radio-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.giftcard-radio {
+  width: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+}
+
+.giftcard-radio-color {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+}
+
+.giftcard-radio-color.circle {
+  border-radius: 50%;
+}
+
+.giftcard-radio-color.red {
+  background-color: #ff5a33;
+}
+
+.giftcard-radio-color.blue {
+  background-color: #0099dd;
+}
+
+.giftcard-radio-color.green {
+  background-color: #b4cf66;
+}
+
+.giftcard-radio-fontsize {
+  height: 100%;
+  vertical-align: baseline;
+}
+
+.giftcard-radio-fontsize.size20 {
+  font-size: 10px;
+}
+
+.giftcard-radio-fontsize.size28 {
+  font-size: 12px;
+}
+.giftcard-radio-fontsize.size32 {
+  font-size: 14px;
+}
+.giftcard-radio-fontsize.size48 {
+  font-size: 16px;
+}
+.giftcard-radio-fontsize.size60 {
+  font-size: 20px;
+}
+
+.giftcard-radio-layout {
+  height: 40px;
+  width: 60px;
+  border: 1px solid black;
+  margin: 4px;
+}
+
+.giftcard-radio-layout-mark {
+  height: 20px;
+  width: 20px;
+  border: 1px solid red;
+  background-color: red;
+}
+
+.top-rigth {
+  transform: rotateY(180deg);
+}
+
+.bottom-rigth {
+  transform: rotate(180deg);
+}
+
+.bottom-left {
+  transform: rotateX(180deg);
+}
