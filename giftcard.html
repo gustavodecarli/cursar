@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div><img src="./img/logo2.png" /></div>
+      <div>
+        <input class="search" placeholder="Search" ></input>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div>
+        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+        <span class="shopping-count warning">1</span>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="calendar.html">Calendario de cursos</a></li>
+        <li><a href="giftcard.html">Gift Card</a></li>
+        <li><a href="inscription.html">Inscripción a curso</a></li>
+        <li><a href="contact.html">Contactenos</a></li>
+      </ul>
+    </nav>
+    <main>
+
+        <section>
+          <article>
+            <div class="giftcard-container">
+            <div class="giftcard-preview">
+                
+                <div class="giftcard-image">
+                  <div class="giftcard-cost">$ 0.00</div>
+                  <h4>GIFT CARD para</h4>
+                  <h2>Destinatario</h2>
+                  
+                </div>
+    
+                <p>VISTA PREVIA DE RESULTADO DE PERSONALIZACION</p>
+            </div>
+            
+            <div class="giftcard-controls">
+              <h4>Personalización de Giftcard</h4>
+              <form>
+                <div class="giftcard-controls-row">
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre Destinatario"/>
+                </div>
+                <div class="giftcard-controls-row">
+                  <h5>Color</h5>
+                  <div class="giftcard-radio-container">
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-color circle red"></div>
+                      <input type="radio" id="color" name="color" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-color circle blue"></div>
+                      <input type="radio" id="color" name="color" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-color circle green"></div>
+                      <input type="radio" id="color" name="color" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="giftcard-controls-row">
+                  <h5>Tamaño de fuente</h5>
+                  <div class="giftcard-radio-container">
+                    
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-fontsize size20">20px</div>
+                      <input type="radio" id="fontsize20" name="fontsize" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-fontsize size28">28px</div>
+                      <input type="radio" id="fontsize28" name="fontsize" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-fontsize size32">32px</div>
+                      <input type="radio" id="fontsize32" name="fontsize" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-fontsize size48">48px</div>
+                      <input type="radio" id="fontsize48" name="fontsize" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-fontsize size60">60px</div>
+                      <input type="radio" id="fontsize60" name="fontsize" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="giftcard-controls-row">
+                  <div>
+                    <label for="monto">Monto $</label>
+                    <input type="text" id="monto" name="monto"/>
+                  </div>
+                </div>
+                
+                <div class="giftcard-controls-row">
+                  <h5>Ubicación</h5>
+                  <div class="giftcard-radio-container">
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-layout top-left">
+                        <div class="giftcard-radio-layout-mark"></div>
+                      </div>
+                      <input type="radio" id="layout" name="layout" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-layout top-rigth">
+                        <div class="giftcard-radio-layout-mark"></div>
+                      </div>
+                      <input type="radio" id="layout" name="layout" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-layout bottom-rigth">  
+                        <div class="giftcard-radio-layout-mark "></div>
+                      </div>
+                      <input type="radio" id="layout" name="layout" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-layout bottom-left">
+                        <div class="giftcard-radio-layout-mark "></div>
+                      </div>
+                      <input type="radio" id="layout" name="layout" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="giftcard-controls-row">
+                  <h5>Fondo</h5>
+                  <div class="giftcard-radio-container">
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-color red"></div>
+                      <input type="radio" id="color" name="color" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-color blue"></div>
+                      <input type="radio" id="color" name="color" />
+                    </div>
+                    <div class="giftcard-radio">
+                      <div class="giftcard-radio-color green"></div>
+                      <input type="radio" id="color" name="color" />
+                    </div>
+                  </div>
+                </div>
+        
+                <div>
+                  <button class="form-button-confirm left">CONFIRMAR</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          </article>
+        </section>
+    </main>
+    <footer class="footer">      
+        <p>Coscarelli Silvana Agustina</p>
+        <p>Correo electrónico: <a href="mailto:silvanaagustinacoscarelli@gmail.com">silvanaagustinacoscarelli@gmail.com</a></p>
+        <p><a href="https://www.unlam.edu.ar" target="_blank" rel="noopener noreferrer">Visitar UNLaM</a></p>
+        <p><a href="#top">Arriba</a></p>
+    </footer>
+    <script type="text/javascript" async="" src="./js/carusel.js"></script>
+  </body>
+ 
+</html>

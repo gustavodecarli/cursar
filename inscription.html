@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div><img src="./img/logo2.png" /></div>
+      <div>
+        <input class="search" placeholder="Search" ></input>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div>
+        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+        <span class="shopping-count warning">3</span>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="calendar.html">Calendario de cursos</a></li>
+        <li><a href="giftcard.html">Gift Card</a></li>
+        <li><a href="inscription.html">Inscripción a curso</a></li>
+        <li><a href="contact.html">Contactenos</a></li>
+      </ul>
+    </nav>
+    <main>
+
+        <section>
+          <h1>TITULO DEL CURSO</h1>
+          <h4>INSCRIPCION</h4>
+          <div class="form-container">
+            <form>
+              <div class="form-row">
+                 <input type="text" name="nombre_01" id="nombre_01"  placeholder="Nombre">
+                <input type="text" name="apellido_01" id="apellido_01" placeholder="Apellido">
+                <input type="text" name="dni_01" id="dni_01" maxlength="8" placeholder="DNI">
+                <button class="form-button-del">-</button>
+              </div>
+              <div class="form-row">
+                <input type="text" name="nombre_02" id="nombre_02" placeholder="Nombre">
+                <input type="text" name="apellido_02" id="apellido_02" placeholder="Apellido">
+                <input type="text" name="dni_02" id="dni_02" maxlength="8" placeholder="DNI">
+                <button class="form-button-del">-</button>
+              </div>
+              <div class="form-row">
+                <input type="text" name="nombre_03" id="nombre_03" placeholder="Nombre">
+                <input type="text" name="apellido_03" id="apellido_03" placeholder="Apellido">
+                <input type="text" name="dni_03" id="dni_03" maxlength="8" placeholder="DNI">
+                <button class="form-button-del">-</button>
+              </div>
+              <div class="form-row">
+                <button class="form-button-add">+</button>
+                <label>agregar persona</label>
+              </div>
+              <br>
+              <div class="form-inscription-foot">
+                <label class="form-total">$ 3330.00</label>
+                <button class="form-button-confirm">INSCRIBIRSE</button>
+              </div>
+            </form>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">      
+        <p>Coscarelli Silvana Agustina</p>
+        <p>Correo electrónico: <a href="mailto:silvanaagustinacoscarelli@gmail.com">silvanaagustinacoscarelli@gmail.com</a></p>
+        <p><a href="https://www.unlam.edu.ar" target="_blank" rel="noopener noreferrer">Visitar UNLaM</a></p>
+        <p><a href="#top">Arriba</a></p>
+    </footer>
+    <script type="text/javascript" async="" src="./js/carusel.js"></script>
+  </body>
+ 
+</html>
