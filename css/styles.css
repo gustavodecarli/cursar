@@ -97,17 +97,20 @@ article {
   border: 1px solid #000000;
 }
 
-.search {
+.search-container {
+  flex-grow: 3;
+}
+
+.search-input {
   background: #ebebeb;
   border: 0;
-  /* border-radius: 4.5px; */
   color: #454647;
-  /* font-size: 18px;
-  height: 20px; */
+  width: 80%;
   padding: 8px;
   min-width: 300px;
-  /* padding: 8px 52px 8px 16px; */
+  margin: 2%;
 }
+
 .shopping {
   padding: 0px 25px;
 }
@@ -134,12 +137,6 @@ article {
 .form-row {
   padding: 10px;
 }
-
-/*
-.form-row input[type='text'] {
-  padding: 5px;
-}
-*/
 
 .form-button-del {
   background-color: #ee6b4d;
@@ -169,6 +166,11 @@ article {
   text-decoration: none;
   font-size: 14px;
   float: center;
+}
+
+.form-button-confirm:hover {
+  background-color: #ff8c00;
+  cursor: pointer;
 }
 
 .form-button-confirm.right {
@@ -242,7 +244,6 @@ input {
 .topnav li a:hover {
   background-color: #ddd;
   color: #000000;
-  min-width: 200px;
 }
 
 .topnav ul li a.active {

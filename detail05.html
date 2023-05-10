@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./fontawesome/6.4.0/css/all.min.css" />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/detail.css" />
@@ -21,8 +15,26 @@
   <body>
     <header class="header">
       <div><img src="./img/logo.png" /></div>
-      <div>
-        <input class="search" placeholder="Search" />
+      <div class="search-container">
+        <input
+          id="search-control"
+          class="search-input"
+          placeholder="Search"
+          list="courses-list"
+          onchange="location.href = this.value"
+        />
+
+        <datalist id="courses-list">
+          <option value="detail01.html">C</option>
+          <option value="detail02.html">JavaScript</option>
+          <option value="detail03.html">POO</option>
+          <option value="detail04.html">Python</option>
+          <option value="detail05.html">JAVA</option>
+          <option value="detail06.html">Arduino</option>
+          <option value="calendar.html">Calendario</option>
+          <option value="giftcard.html">Giftcard</option>
+          <option value="contact.html">Contacto</option>
+        </datalist>
       </div>
       <div>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
@@ -67,20 +79,249 @@
                   <br>
 
                   <div>
-                    <button class="form-button-confirm left">INSCRIBIRSE</button>
+                    <form action="inscription.html">
+                      <button type="submit" class="form-button-confirm left">
+                        INSCRIBIRSE
+                      </button>
+                    </form>
                   </div>
                   <br>
                   <br>
                   <br>
                   <br>
                   <div>
-                    <h3>CONTENIDO POR CLASE</h3> 
-                    <br>
-                  <br>
-                  <br>
-                  <br>
-                  <div> 
-                  </div>                
+                    <h3>CONTENIDOS DEL CURSO</h3>
+                    <br />
+                    <div class="detail-accordion">
+                      <details>
+                        <summary>INTRODUCCION</summary>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-video"></i>
+                            Introducción
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              10 min
+                              <i class="fa fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-volume-up"></i>
+                            Primeros Pasos
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            Clase Principal
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              25 min
+                              <i class="fa fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-graduation-cap"></i>
+                            Examen
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>UNIDAD 1</summary>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-video"></i>
+                            Introducción
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              10 min
+                              <i class="fa fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-volume-up"></i>
+                            Primeros Pasos
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            Clase Principal
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              25 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-graduation-cap"></i>
+                            Examen
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>UNIDAD 2</summary>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-video"></i>
+                            Introducción
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              10 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-volume-up"></i>
+                            Primeros Pasos
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            Clase Principal
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              25 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-graduation-cap"></i>
+                            Examen
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </details>
+                      <details>
+                        <summary>UNIDAD 3</summary>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-video"></i>
+                            Introducción
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              10 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fa fa-volume-up"></i>
+                            Primeros Pasos
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            Clase Principal
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              25 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail-accordion-detail">
+                          <div>
+                            <i class="fas fa-graduation-cap"></i>
+                            Examen
+                          </div>
+                          <div clas="detail-accordion-detail-state">
+                            <div>
+                              <i class="fa-regular fa-clock"></i>
+                              15 min
+                              <i class="fa-regular fa-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                  </div>               
                 </div>
               </div>
           </div>
@@ -113,7 +354,13 @@
         <p>Fedelich Johanna - 38854477</p>
       </div>
       <div class="footer-card">
-        <p><a href="#top">Arriba</a></p>
+        <ul class="topnav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="calendar.html">Calendario de cursos</a></li>
+          <li><a href="giftcard.html">Gift Card</a></li>
+          <li><a href="inscription.html">Inscripción a curso</a></li>
+          <li><a href="contact.html">Contactenos</a></li>
+        </ul>
       </div>
       <div class="footer-card">
         <p><i class="fa-brands fa-instagram fa-1x"></i> @cursar</p>
@@ -122,5 +369,4 @@
       </div>
     </footer>
   </body>
- 
 </html>
