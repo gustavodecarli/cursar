@@ -81,3 +81,7 @@
 .fa-check-circle {
   color: green;
 }
+
+.courses-container {
+  flex-wrap: nowrap;
+}
