@@ -15,7 +15,7 @@
   /* height: var(--cardHeight); */
   margin: 1.5%;
   padding: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px #00000033;
 }
 
 .courses-import h2 {
@@ -30,7 +30,7 @@
 
 .course-cost {
   background-color: #293241;
-  color: white;
+  color: #ffffff;
   position: relative;
   z-index: 2;
   bottom: 30%;
@@ -68,12 +68,12 @@
   padding: 10px;
   margin-top: 4px;
   background-color: #0f6466;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   border-style: none;
 }
 
 .course-comprar:hover {
-  background-color: darkorange;
+  background-color: #ff8c00;
   cursor: pointer;
 }

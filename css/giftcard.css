@@ -30,7 +30,7 @@
 .giftcard-cost {
   background-color: #293241;
   position: absolute;
-  color: white;
+  color: #ffffff;
   z-index: 2;
   font-size: 30px;
   top: 30px;
@@ -114,15 +114,15 @@
 .giftcard-radio-layout {
   height: 40px;
   width: 60px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   margin: 4px;
 }
 
 .giftcard-radio-layout-mark {
   height: 20px;
   width: 20px;
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
 }
 
 .top-rigth {
