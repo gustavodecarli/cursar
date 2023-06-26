@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/carusel.css" />
     <link rel="stylesheet" href="./css/pays.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
 
   <body>
@@ -41,7 +42,12 @@
       </div>
       <div>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <span class="shopping-count warning">1</span>
+        <span
+          id="shopping-count"
+          class="shopping-count warning"
+          onclick="viewShopping()"
+          >0</span
+        >
       </div>
     </header>
 
@@ -58,13 +64,29 @@
     <main>
       <section>
         <div class="slideshow-container">
-          <div>
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
             <img src="./img/img1.jpeg" style="width: 100%" />
+            <div class="text">El futuro es hoy</div>
           </div>
-          <a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./img/img2.jpeg" style="width: 100%" />
+            <div class="text">Saber es poder</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./img/img3.jpeg" style="width: 100%" />
+            <div class="text">Aprende tu también</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
         <br />
       </section>
       <section class="courses-import">
@@ -80,91 +102,10 @@
       <section>
         <h2>CURSOS DESTACADOS</h2>
 
-        <div class="courses-container">
-          <div class="course">
-            <img src="img/courses/course01.jpeg" />
-            <span class="course-cost">$ 1599.00</span>
-            <div class="course-resumen">
-              <p><span class="course-resumen-hour">45</span> hs.</p>
-              <div class="course-resumen-text">
-                <h4>Curso C</h4>
-                <p>Programación en C de Cero a Experto</p>
-              </div>
-            </div>
-            <form action="detail01.html">
-              <button class="course-comprar" type="submit">Comprar</button>
-            </form>
-          </div>
-          <div class="course">
-            <img src="img/courses/curso02.jpg" />
-            <span class="course-cost">$1799.00</span>
-            <div class="course-resumen">
-              <p><span class="course-resumen-hour">28</span> hs.</p>
-              <div class="course-resumen-text">
-                <h4>JavaScript</h4>
-                <p>Master en programación fullstack JavaScript Angular Node</p>
-              </div>
-            </div>
-            <form action="detail02.html">
-              <button class="course-comprar" type="submit">Comprar</button>
-            </form>
-          </div>
-          <div class="course">
-            <img src="img/courses/course03.jpeg" />
-            <span class="course-cost">$ 1199.00</span>
-            <div class="course-resumen">
-              <p><span class="course-resumen-hour">5</span> hs.</p>
-              <div class="course-resumen-text">
-                <h4>POO</h4>
-                <p>Programación Orientada a Objetos</p>
-              </div>
-            </div>
-            <form action="detail03.html">
-              <button class="course-comprar" type="submit">Comprar</button>
-            </form>
-          </div>
-          <div class="course">
-            <img src="img/courses/course04.jpeg" />
-            <span class="course-cost">$1999,00</span>
-            <div class="course-resumen">
-              <p><span class="course-resumen-hour">15</span> hs.</p>
-              <div class="course-resumen-text">
-                <h4>Python 3</h4>
-                <p>Programación de Principiante a Avanzado</p>
-              </div>
-            </div>
-            <form action="detail04.html">
-              <button class="course-comprar" type="submit">Comprar</button>
-            </form>
-          </div>
-          <div class="course">
-            <img src="img/courses/course05.jpeg" />
-            <span class="course-cost">$1599,00</span>
-            <div class="course-resumen">
-              <p><span class="course-resumen-hour">30</span> hs.</p>
-              <div class="course-resumen-text">
-                <h4>Java</h4>
-                <p>Aprender a programar con Java</p>
-              </div>
-            </div>
-            <form action="detail05.html">
-              <button class="course-comprar" type="submit">Comprar</button>
-            </form>
-          </div>
-          <div class="course">
-            <img src="img/courses/course06.jpeg" />
-            <span class="course-cost">$1550,00</span>
-            <div class="course-resumen">
-              <p><span class="course-resumen-hour">13</span> hs.</p>
-              <div class="course-resumen-text">
-                <h4>Arduino</h4>
-                <p>Electrónica y programación C desde cero</p>
-              </div>
-            </div>
-            <form action="detail06.html">
-              <button class="course-comprar" type="submit">Comprar</button>
-            </form>
-          </div>
+        <div id="courses" class="courses-container">
+          <!-- Se modifico respecto a la primera entrega donde esta estatico -->
+          <!-- se agregan los cursos dinamicamente por js tomando la informacion -->
+          <!-- de ./data.js en formato JSON -->
         </div>
       </section>
       <section class="pays-cointainer">
@@ -206,5 +147,22 @@
         <p><i class="fa-brands fa-twitter fa-1x"></i> @cursar</p>
       </div>
     </footer>
+
+    <div id="modalShopping" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeShopping" class="close">&times;</span>
+        <p>Cursos inscriptos</p>
+        <br />
+        <br />
+        <ul id="shoppings"></ul>
+      </div>
+    </div>
+    <script src="js/carrusel.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/shopping.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
   </body>
 </html>

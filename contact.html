@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./fontawesome/6.4.0/css/all.min.css" />
 
     <link rel="stylesheet" href="./css/styles.css" />
-
+    <link rel="stylesheet" href="./css/modal.css" />
 
   </head>
 
@@ -39,7 +39,12 @@
       </div>
       <div>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <span class="shopping-count warning">1</span>
+        <span
+          id="shopping-count"
+          class="shopping-count warning"
+          onclick="viewShopping()"
+          >0</span
+        >
       </div>
     </header>
 
@@ -60,12 +65,18 @@
             <h4>FORMULARIO DE CONSULTAS</h4>
           </div>
           <form  action="mailto:agustinacoscarelli@gmail.com">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required/>
             <input type="email" id="email" name="email" placeholder="Email"/>
             <input type="tel" id="telefono" name="telefono" placeholder="Teléfono"/>
+            
+            <textarea  
+              id="consulta" name="consulta" 
+            placeholder="Consulta" rows="5" cols="80" maxlength="1000"
+             onkeyup="cambioConsulta(event)"></textarea>
+            <p id="charCount">0/1000</p>
             <div>              
-              <button type="submit" class="form-button-confirm">ENVIAR</button>
+              <button type="submit" class="form-button-confirm" onclick="validar()">ENVIAR</button>
             </div>
           </form>
         </div>
@@ -107,6 +118,28 @@
         <p><i class="fa-brands fa-twitter fa-1x"></i> @cursar</p>
       </div>
     </footer>
+    <div id="modalShopping" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeShopping" class="close">&times;</span>
+        <p>Cursos inscriptos</p>
+        <br />
+        <ul id="shoppings"></ul>
+      </div>
+    </div>
+
+    <div id="modalContact" class="modal">
+      <div class="modal-content form-container ">
+        <h2>Consulta Enviada</h2>
+        <br />
+        <a href="index.html">
+          <button>Aceptar</button>
+       </a>
+      </div>
+    </div>
+    
+    <script src="js/shopping.js"></script>
+    <script src="js/contact.js"></script>
   </body>
  
 </html>

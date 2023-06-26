@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="stylesheet" href="./fontawesome/6.4.0/css/all.min.css" />
-
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
 
   <body>
@@ -37,7 +36,12 @@
       </div>
       <div>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <span class="shopping-count warning">1</span>
+        <span
+          id="shopping-count"
+          class="shopping-count warning"
+          onclick="viewShopping()"
+          >0</span
+        >
       </div>
     </header>
 
@@ -56,83 +60,86 @@
         <h1>TITULO DEL CURSO</h1>
         <h4>INSCRIPCION</h4>
         <div class="form-container">
-          <form>
+          <form id="form-inscription">
             <div class="form-row">
               <input
                 type="text"
-                name="nombre_01"
-                id="nombre_01"
+                name="inputNombre-01"
+                id="inputNombre-01"
                 placeholder="Nombre"
+                required
               />
               <input
                 type="text"
-                name="apellido_01"
-                id="apellido_01"
+                name="inputApellido-01"
+                id="inputApellido-01"
                 placeholder="Apellido"
+                required
               />
               <input
                 type="text"
-                name="dni_01"
-                id="dni_01"
+                name="inputDNI-01"
+                id="inputDNI-01"
                 maxlength="8"
                 placeholder="DNI"
-              />
-              <button class="form-button-del">-</button>
-            </div>
-            <div class="form-row">
-              <input
-                type="text"
-                name="nombre_02"
-                id="nombre_02"
-                placeholder="Nombre"
+                required
               />
               <input
                 type="text"
-                name="apellido_02"
-                id="apellido_02"
-                placeholder="Apellido"
+                name="inputEmail-01"
+                id="inputEmail-01"
+                maxlength="100"
+                placeholder="Em@il"
+                required
               />
               <input
                 type="text"
-                name="dni_02"
-                id="dni_02"
-                maxlength="8"
-                placeholder="DNI"
-              />
-              <button class="form-button-del">-</button>
-            </div>
-            <div class="form-row">
-              <input
-                type="text"
-                name="nombre_03"
-                id="nombre_03"
-                placeholder="Nombre"
+                name="inputTelefono-01"
+                id="inputTelefono-01"
+                maxlength="100"
+                placeholder="Teléfono"
               />
               <input
-                type="text"
-                name="apellido_03"
-                id="apellido_03"
-                placeholder="Apellido"
+                type="number"
+                name="inputImporte-01"
+                id="inputImporte-01"
+                maxlength="100"
+                placeholder="Importe"
+                required
+                value="20"
+                onkeyup="calcularImporte()"
               />
-              <input
-                type="text"
-                name="dni_03"
-                id="dni_03"
-                maxlength="8"
-                placeholder="DNI"
-              />
-              <button class="form-button-del">-</button>
-            </div>
-            <div class="form-row">
-              <button class="form-button-add">+</button>
-              <label>agregar persona</label>
-            </div>
-            <br />
-            <div class="form-inscription-foot">
-              <label class="form-total"> 0.00</label>
-              <button class="form-button-confirm">INSCRIBIRSE</button>
+              <button
+                type="button"
+                class="form-button-del"
+                onclick="limpiarDatos()"
+              >
+                -
+              </button>
             </div>
           </form>
+          <div class="form-row">
+            <button
+              type="button"
+              class="form-button-add"
+              onclick="agregarPersona()"
+            >
+              +
+            </button>
+            <label>agregar persona</label>
+          </div>
+          <br />
+          <div class="form-inscription-foot">
+            <label id="total" class="form-total"> 0.00</label>
+            <button
+              type="button"
+              id="btn-inscribirse"
+              class="form-button-confirm"
+              onclick="inscribirse()"
+            >
+              INSCRIBIRSE
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -156,5 +163,35 @@
         <p><i class="fa-brands fa-twitter fa-1x"></i> @cursar</p>
       </div>
     </footer>
+    <div id="modalCongratulations" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Felicitaciones esta subscrito al curso</p>
+      </div>
+    </div>
+
+    <div id="modalShopping" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeShopping" class="close">&times;</span>
+        <p>Cursos inscriptos</p>
+        <br />
+        <ul id="shoppings"></ul>
+      </div>
+    </div>
+
+    <div id="modalIncription" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closePeoples" class="close">&times;</span>
+        <p>Listado de inscripción</p>
+        <br />
+        <ul id="peoples"></ul>
+      </div>
+    </div>
+
+    <script src="js/shopping.js"></script>
+    <script src="js/inscription.js"></script>
   </body>
 </html>

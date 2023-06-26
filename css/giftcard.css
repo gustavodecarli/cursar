@@ -125,11 +125,11 @@
   background-color: #ff0000;
 }
 
-.top-rigth {
+.top-right {
   transform: rotateY(180deg);
 }
 
-.bottom-rigth {
+.bottom-right {
   transform: rotate(180deg);
 }
 

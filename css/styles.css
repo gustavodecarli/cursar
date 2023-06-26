@@ -130,6 +130,10 @@ article {
   right: 20px;
 }
 
+.shopping-count:hover {
+  cursor: pointer;
+}
+
 .form-container {
   text-align: center;
 }
@@ -249,6 +253,15 @@ input {
 .topnav ul li a.active {
   background-color: #04aa6d;
   color: #ffffff;
+}
+
+.buttonDeleteShopping {
+  width: 30px;
+  background-color: #ee6b4d;
+}
+
+.textShopping {
+  padding-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/courses.css" />
     <link rel="stylesheet" href="./css/detail.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
 
   <body>
@@ -39,7 +40,12 @@
       </div>
       <div>
         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <span class="shopping-count warning">1</span>
+        <span
+          id="shopping-count"
+          class="shopping-count warning"
+          onclick="viewShopping()"
+          >0</span
+        >
       </div>
     </header>
 
@@ -455,5 +461,15 @@
         <p><i class="fa-brands fa-twitter fa-1x"></i> @cursar</p>
       </div>
     </footer>
+    <div id="modalShopping" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeShopping"  class="close">&times;</span>
+        <p>Cursos inscriptos</p>
+        <br />
+        <ul id="shoppings"></ul>
+      </div>
+    </div>
+    <script src="js/shopping.js"></script>
   </body>
 </html>
