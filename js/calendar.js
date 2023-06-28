@@ -17,30 +17,30 @@ const monthNames = [
   'Dic',
 ];
 
-let primerDia = new Date(year, month, 1);
-const dayInicio = primerDia.getDay();
-primerDia.setDate(primerDia.getDate() - dayInicio + 1);
+let primerDia = null;
 
 function next() {
   primerDia.setDate(primerDia.getDate() + 7);
-  graficar(primerDia);
+  graficar();
 }
 
 function prev() {
   primerDia.setDate(primerDia.getDate() - 7);
-  graficar(primerDia);
+  graficar();
 }
 
 function hoy() {
-  let primerDia = new Date(year, month, 1);
-  const dayInicio = primerDia.getDay();
-  primerDia.setDate(primerDia.getDate() - dayInicio + 1);
-  graficar(primerDia);
+  const primerDiaReset = new Date(year, month, 1);
+  const dayInicioReset = primerDiaReset.getDay();
+  primerDiaReset.setDate(primerDiaReset.getDate() - dayInicioReset + 1);
+
+  primerDia = new Date(primerDiaReset);
+  graficar();
 }
 
 function graficar(dateInit) {
   let days = document.getElementsByClassName('calendar-day-number');
-  let dayFor = new Date(dateInit);
+  let dayFor = new Date(primerDia);
 
   for (let item of days) {
     item.innerHTML =
@@ -78,4 +78,4 @@ function graficar(dateInit) {
   }
 }
 
-graficar(primerDia);
+hoy();
