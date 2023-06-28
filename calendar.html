@@ -61,6 +61,11 @@
     <main>
       <section>
         <div class="calendar-container">
+          <div class="calendar-button">
+            <button onclick="hoy()">Hoy</button>
+            <button onclick="prev()">-</button>
+            <button onclick="next()">+</button>
+          </div>
           <div class="calendar-week">
             <div class="calendar-day">
               <div class="calendar-day-name">LUN</div>
@@ -102,7 +107,7 @@
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">MIÉ</div>
-              <div class="calendar-day-number day-now">10</div>
+              <div class="calendar-day-number">10</div>
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">JUE</div>
@@ -111,9 +116,6 @@
             <div class="calendar-day">
               <div class="calendar-day-name">VIE</div>
               <div class="calendar-day-number">12</div>
-              <div class="calendar-day-course">
-                <a href="detail05.html">Java J2EE</a>
-              </div>
             </div>
             <div class="calendar-day day-weekend">
               <div class="calendar-day-name">SÁB</div>
@@ -140,9 +142,6 @@
             <div class="calendar-day">
               <div class="calendar-day-name">JUE</div>
               <div class="calendar-day-number">18</div>
-              <div class="calendar-day-course">
-                <a href="detail02.html">Js FullStack</a>
-              </div>
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">VIE</div>
@@ -161,9 +160,6 @@
             <div class="calendar-day">
               <div class="calendar-day-name">LUN</div>
               <div class="calendar-day-number">22</div>
-              <div class="calendar-day-course">
-                <a href="detail01.html">Programación en C</a>
-              </div>
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">MAR</div>
@@ -172,12 +168,6 @@
             <div class="calendar-day">
               <div class="calendar-day-name">MIÉ</div>
               <div class="calendar-day-number">24</div>
-              <div class="calendar-day-course">
-                <a href="detail03.html">POO</a>
-              </div>
-              <div class="calendar-day-course">
-                <a href="detail06.html">Arduino</a>
-              </div>
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">JUE</div>
@@ -211,7 +201,7 @@
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">JUE</div>
-              <div class="calendar-day-number">1 jun.</div>
+              <div class="calendar-day-number">1</div>
             </div>
             <div class="calendar-day">
               <div class="calendar-day-name">VIE</div>
@@ -258,6 +248,8 @@
         <ul id="shoppings"></ul>
       </div>
     </div>
+    <script src="js/data.js"></script>
     <script src="js/shopping.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>

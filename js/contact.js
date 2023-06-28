@@ -30,16 +30,16 @@ function validar() {
     return;
   }
 
-  if (consulta === '') {
-    alert('La descripción de la consulta no puede estar vacia');
-    return;
-  }
-
   if (telefono !== '') {
     if (telefono.length !== 9 || telefono.substr(4, 1) !== '-') {
       alert('El formato del telefono debe ser XXXX-XXXX');
       return;
     }
+  }
+
+  if (consulta === '') {
+    alert('La descripción de la consulta no puede estar vacia');
+    return;
   }
 
   modalContact.style.display = 'block';

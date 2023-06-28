@@ -7,6 +7,7 @@ const courses = [
     hours: 45,
     img: 'img/courses/course01.jpeg',
     link: 'detail01.html',
+    date: new Date(2023, 5, 9),
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const courses = [
     hours: 28,
     img: 'img/courses/course02.jpeg',
     link: 'detail02.html',
+    date: new Date(2023, 5, 14),
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const courses = [
     hours: 5,
     img: 'img/courses/course03.jpeg',
     link: 'detail03.html',
+    date: new Date(2023, 5, 23),
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const courses = [
     hours: 15,
     img: 'img/courses/course04.jpeg',
     link: 'detail04.html',
+    date: new Date(2023, 6, 3),
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const courses = [
     hours: 30,
     img: 'img/courses/course05.jpeg',
     link: 'detail05.html',
+    date: new Date(2023, 6, 6),
   },
   {
     id: 6,
@@ -51,6 +56,7 @@ const courses = [
     cost: 1550.0,
     hours: 13,
     img: 'img/courses/course06.jpeg',
-    link: 'detail04.html',
+    link: 'detail06.html',
+    date: new Date(2023, 6, 20),
   },
 ];

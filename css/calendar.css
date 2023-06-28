@@ -52,3 +52,13 @@
 .day-weekend {
   background-color: #dcdcdc;
 }
+
+.calendar-button {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.calendar-button button {
+  padding: 10px;
+}
