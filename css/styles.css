@@ -1,12 +1,5 @@
-:root {
-  --cardWidth: 240px;
-  --cardHeight: 380px;
-  --cardMargin: 5px;
-  --fontSize: 20px;
-}
-
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   font-family: Verdana, Tahoma, sans-serif, Times, 'Times New Roman', serif;
 }
@@ -25,7 +18,7 @@ h4 {
 }
 
 a {
-  font-size: var(--fontSize);
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -148,7 +141,9 @@ article {
   border-radius: 50%;
   font-size: 18;
   font-weight: bold;
-  padding: 6px;
+  padding: 5px;
+  width: 25px;
+  align-self: center;
 }
 
 .form-button-add {
@@ -157,7 +152,8 @@ article {
   border-radius: 50%;
   font-size: 18;
   font-weight: bold;
-  padding: 6px;
+  padding: 5px;
+  width: 25px;
 }
 
 .form-button-confirm {
@@ -208,7 +204,8 @@ input {
   margin: 3px;
 }
 
-.form-contact-form input {
+.form-contact-form input,
+.form-contact-form textarea {
   padding: 3px;
   margin: 3px;
   width: calc(100% - 6px);
@@ -224,6 +221,12 @@ input {
 
 .form-contact-map {
   width: 100%;
+}
+
+.form-row-inscription {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* MENU */
@@ -269,7 +272,7 @@ input {
   .courses-container,
   .form-contact,
   .giftcard-container,
-  .giftcard-radio-container,
+  .form-row-inscription,
   .topnav {
     flex-direction: column;
   }
@@ -277,7 +280,20 @@ input {
   .course,
   .form-contact-form,
   .form-contact-detail,
+  .form-row-inscription,
   .giftcard-radio-container {
     width: 100%;
+  }
+  article,
+  .giftcard-controls,
+  .giftcard-preview {
+    padding: 0;
+  }
+  .giftcard-image {
+    min-height: 400px;
+  }
+  .giftcard-cost {
+    top: 0;
+    right: 0;
   }
 }

@@ -36,6 +36,7 @@ function agregarPersona() {
   let divRow = document.createElement('div');
   divRow.className = 'form-row';
   divRow.id = `form-${id}`;
+  divRow.className = 'form-row-inscription';
 
   const inputFirstName = document.createElement('input');
   inputFirstName.type = 'text';
@@ -51,21 +52,25 @@ function agregarPersona() {
   inputNumberID.type = 'text';
   inputNumberID.placeholder = 'DNI';
   inputNumberID.id = `inputDNI-${id}`;
+  inputNumberID.maxLength = 8;
 
   const inputEmail = document.createElement('input');
   inputEmail.type = 'text';
   inputEmail.placeholder = 'Em@il';
   inputEmail.id = `inputEmail-${id}`;
+  inputEmail.maxLength = 100;
 
   const inputTelefono = document.createElement('input');
   inputTelefono.type = 'text';
   inputTelefono.placeholder = 'Teléfono';
   inputTelefono.id = `inputTelefono-${id}`;
+  inputTelefono.maxLength = 100;
 
   const inputImporte = document.createElement('input');
-  inputImporte.type = 'text';
+  inputImporte.type = 'number';
   inputImporte.placeholder = 'Importe';
   inputImporte.id = `inputImporte-${id}`;
+  inputImporte.maxLength = 100;
   inputImporte.value = IMPORTE_DEFAULT;
   inputImporte.onkeyup = () => calcularImporte();
 
