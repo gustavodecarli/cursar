@@ -169,7 +169,7 @@ article {
 }
 
 .form-button-confirm:hover {
-  background-color: #ff8c00;
+  background-color: #324405;
   cursor: pointer;
 }
 
@@ -197,6 +197,10 @@ article {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.form-contact-charcount {
+  margin: 0px 3px 3px 3px;
 }
 
 input {
