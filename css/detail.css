@@ -16,7 +16,7 @@
 }
 
 .detail-image {
-  height: 400px;
+  top: 0;
 }
 
 .detail-text-container {
@@ -82,6 +82,15 @@
   color: green;
 }
 
-.courses-container {
-  flex-wrap: nowrap;
+@media only screen and (max-width: 600px) {
+  .detail-image-container,
+  .detail-image,
+  .detail-text-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .detail-image img {
+    width: 100%;
+  }
 }

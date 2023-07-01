@@ -273,6 +273,7 @@ input {
   .form-contact,
   .giftcard-container,
   .form-row-inscription,
+  .detail-footer-text,
   .topnav {
     flex-direction: column;
   }
@@ -281,8 +282,11 @@ input {
   .form-contact-form,
   .form-contact-detail,
   .form-row-inscription,
+  .detail-footer-text,
   .giftcard-radio-container {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   article,
   .giftcard-controls,
