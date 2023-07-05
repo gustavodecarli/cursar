@@ -22,6 +22,12 @@ courses.forEach((element) => {
     `              >` +
     `                Comprar` +
     `              </button>` +
+    `              <button` +
+    `                class="course-comprar course-comprar-detail"` +
+    `                type="submit"` +
+    `              >` +
+    `                Ver detalle` +
+    `              </button>` +
     `            </form>` +
     `          </div>`;
 

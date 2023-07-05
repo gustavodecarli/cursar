@@ -67,13 +67,17 @@
   float: right;
   padding: 10px;
   margin-top: 4px;
-  background-color: #0f6466;
+  background-color: #9bc0d9;
   color: #ffffff;
   border-radius: 5px;
   border-style: none;
 }
 
 .course-comprar:hover {
-  background-color: #ff8c00;
+  background-color: #0f6466;
   cursor: pointer;
+}
+
+.course-comprar-detail {
+  margin-right: 3px;
 }
