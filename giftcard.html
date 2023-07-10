@@ -281,7 +281,13 @@
                 </div>
 
                 <div>
-                  <button class="form-button-confirm left">CONFIRMAR</button>
+                  <button
+                    type="button"
+                    onclick="confirmargGiftCard()"
+                    class="form-button-confirm left"
+                  >
+                    CONFIRMAR
+                  </button>
                 </div>
               </form>
             </div>
@@ -316,6 +322,18 @@
         <p>Cursos inscriptos</p>
         <br />
         <ul id="shoppings"></ul>
+      </div>
+    </div>
+
+    <div id="modalGiftCard" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeGiftCard" class="close">&times;</span>
+        <h2>¡ Felicitaciones !</h2>
+        <br />
+        <h2 id="giftcard-modal-name"></h2>
+        <br />
+        <h4>Usted a recibido una Gift Card de Cursar</h4>
       </div>
     </div>
     <script src="js/shopping.js"></script>

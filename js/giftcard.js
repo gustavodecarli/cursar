@@ -1,3 +1,5 @@
+const modalGiftCard = document.getElementById('modalGiftCard');
+
 function cambiarNombre(e) {
   document.getElementById('txtDestinatario').innerHTML = e.target.value;
 }
@@ -58,3 +60,22 @@ function cambiarUbicacion(e) {
       break;
   }
 }
+
+function confirmargGiftCard() {
+  const name = document.getElementById('txtDestinatario').innerHTML;
+  const color = document.getElementById('txtDestinatario').style.color;
+
+  document.getElementById('giftcard-modal-name').innerHTML = name;
+  document.getElementById('giftcard-modal-name').style.color = color;
+
+  modalGiftCard.style.display = 'block';
+}
+
+function hideModal() {
+  modalGiftCard.style.display = 'none';
+}
+
+const closeGiftCard = document.getElementById('closeGiftCard');
+closeGiftCard.onclick = function () {
+  hideModal();
+};
